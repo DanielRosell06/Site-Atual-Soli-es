@@ -1,0 +1,167 @@
+/* Barra de Navegação */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-image: url(../imagens/logo-barra-navegação.jpg);
+    background-position-y: center;
+    background-position-x: 10px;
+    background-repeat: no-repeat;
+    background-color: #004080;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    z-index: 1100; /* Para garantir que a navbar fique na frente */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 0px;
+    height: 100%;
+}
+
+.navbar li button {
+    color: white;
+    height: 100%;
+    width: 100px;
+    background-color: #004080;
+    border: none;
+}
+
+.navbar li button:hover {
+    color: white;
+    height: 100%;
+    width: 100px;
+    background-color: #002a53;
+    border: none;
+}
+
+/* Oculta os links e exibe o ícone de menu em telas menores */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+/* botao de subir a tela */
+
+#topButton {
+    width: 50px;
+    height: 50px;
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Fixa o botão na posição */
+    bottom: 50px; /* Distância do botão até o rodapé */
+    right: 50px; /* Distância do botão até o lado direito */
+    background-color: #797979; /* Cor do fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer; /* Cursor de clique */
+    font-size: 18px; /* Tamanho da fonte */
+    z-index: 1000; /* Garantir que fique sobre outros elementos */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Sombra para o botão */
+}
+
+#topButton:hover {
+    background-color: #3f3f3f; /* Cor do botão ao passar o mouse */
+}
+
+
+
+
+/* Rodapé */
+
+.footer
+{
+    width: 100%;
+}
+
+.top-footer {
+    margin: 0;
+    background-color: #cccccc;
+    padding: 20px;
+    text-align: left;
+    clear: both;
+}
+
+.top-footer ul
+{
+    padding: 0;
+}
+
+.redes
+{
+    margin-right: 50px;
+    padding-left: 30px;
+}
+
+.top-footer ul li{
+    display: inline-block;
+}
+
+.redes h5
+{
+    margin: 0vw;
+    font-weight: 10;
+}
+.redes h2
+{
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 6px;
+}
+
+.icones
+{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.icones li i
+{
+    margin-right: 10px;
+}
+
+.icones li i:hover
+{
+    margin-right: 10px;
+    color: #0061c2;
+}
+
+.menu-footer a
+{
+    margin-right: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-footer a:hover
+{
+    margin-right: 20px;
+    color: black;
+    text-decoration: underline;
+}
+
+.bottom-footer {
+    background-color: #b6b6b6;
+    padding: 20px;
+    text-align: center;
+    clear: both; /* Adicionado para corrigir o posicionamento */
+}
+
+
+

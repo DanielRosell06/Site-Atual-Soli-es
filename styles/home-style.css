@@ -1,0 +1,516 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    text-align: justify;
+}
+
+
+
+/* Banner */
+
+.banner {
+    position: relative;
+    background-color: #d7ebff;
+    height: 90vh;
+    box-shadow: 0vw 0vw 100px rgb(0, 0, 189); /* Sombra azul */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../imagens/imagem-publica-03.jpg");
+    background-size: cover;
+    overflow: hidden; /* Para garantir que o pseudo-elemento não ultrapasse o banner */
+    padding-left: 8vw;
+    
+}
+
+.banner-content
+{
+    display: flex;
+}
+
+.barra-banner
+{
+    background-color: white;
+    height:36vh;
+    width: 7px;
+    margin-top: 31vh;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.banner-text {
+    width: 60vw;
+    color: white;
+    text-align: left;
+    margin-top: 31vh;
+}
+.banner-text h1{
+    font-size: 6vh;
+    font-weight: bold;
+    margin: 0px;
+}
+.banner-text p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Roboto tem uma versão bem fina */
+    font-size: 24px;
+    margin-top: 12px;
+}
+
+.banner-buttons button
+{
+    font-size: 3vh;
+    font-weight: 600;
+    border: none;
+    padding: 2vh 30px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease; /* Suaviza a transição quando clicado */
+}
+
+.botao-saber-mais:active {
+    transform: translateY(5px); /* Faz o botão "afundar" ao ser clicado */
+    background-color:#c5c5c5; /* Cor do botão */
+    box-shadow: 0px 3px 0px #9c9c9c, 0px 7px 10px rgba(0, 0, 0, 0.2); /* Sombra menor durante o clique */
+}
+
+.botao-entrar-em-contato:active {
+    transform: translateY(5px); /* Faz o botão "afundar" ao ser clicado */
+    background-color:#004080; /* Cor do botão */
+    box-shadow: 0px 3px 0px #002a53, 0px 7px 10px rgba(0, 0, 0, 0.2); /* Sombra menor durante o clique */
+}
+
+.botao-saber-mais
+{
+    margin-right: 5px;
+    background-color:#ffffff; /* Cor do botão */
+    box-shadow: 0px 5px 0px #c5c5c5, 0px 10px 15px rgba(0, 0, 0, 0.2); /* Sombra para o efeito de 3D */
+}
+
+.botao-entrar-em-contato
+{
+    color: white;
+    background-color:#0061c2; /* Cor do botão */
+    box-shadow: 0px 5px 0px #004080, 0px 10px 15px rgba(0, 0, 0, 0.2); /* Sombra para o efeito de 3D */
+}
+
+.logo-banner
+{
+    position: absolute;
+    width: 20vw;
+    right: 3vw;
+    filter: brightness(100%);
+    bottom: 40px;
+}
+
+.divisor-onda {
+    position: absolute; /* Coloca o SVG em posição absoluta */
+    width: 100%; /* Faz o SVG se ajustar à largura da tela */
+    margin: 0; /* Remove qualquer margem */
+    z-index: -1; /* Coloca o SVG atrás do conteúdo */
+}
+
+
+
+/* Conteúdo primário */
+
+
+
+
+
+.servicos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre cada conjunto de serviços */
+    width: 100%;
+    height: 300px;
+}
+
+.conjunto-servicos {
+    display: none;
+    width: 800px;
+}
+
+.servicos-ativos {
+    display: flex;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.servico {
+    width: 150px;
+    height: 200px;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.servico i {
+    font-size: 40px;
+}
+
+.azul {
+    background-color: #0055aa;
+    margin-top: 70px;
+}
+
+.amarelo {
+    background-color: #ffb30e;
+    margin-top: -70px;
+}
+
+.servicos-controler {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+
+.pontos-container{
+    width: 1000px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.pontos-comprometimento{
+    width: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.pontos-comprometimento h1
+{
+    font-weight: 600;
+}
+
+.pontos-comprometimento p
+{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.pontos-comprometimento h1{
+    color:#002a53;
+}
+
+.pontos-tecnologia-equipamentos
+{
+    width: 760px;
+    height: 100%;
+    margin-left: 40px;
+}
+
+.pontos-tecnologia{
+    height: 50%;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.pontos-tecnologia img{
+    width: 43%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: auto;
+}
+
+.pontos-tecnologia h2{
+    height: 210px;
+    padding: 10px 30px;
+    background-color: #0055aa;
+    color: white;
+    margin: 0;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-right: 30px;
+}
+
+.pontos-equipamentos
+{
+    height: 50%;
+    display: flex;
+    margin-top:10px;
+}
+
+.pontos-equipamentos img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 10px;
+}
+
+.pontos-equipamentos h2{
+    height: 210px;
+    padding: 10px 30px;
+    background-color: #ffb30e;
+    color: white;
+    margin: 0px;
+    margin-left: 30px;
+}
+
+
+/* Missao visão valor*/
+
+.onda-top, .onda-bottom {
+    position: relative;
+    width: 100%;
+    height: 1px; /* ajuste conforme necessário */
+    z-index: -1000;
+
+}
+
+.onda-bottom {
+    margin-bottom: 170px;
+}
+
+.onda-top{
+    margin-top: 140px;
+    transform: rotate(180deg)
+}
+
+.onda-top svg, .onda-bottom svg {
+    position: relative;
+    width: 100%; /* Duplica o tamanho para permitir o loop */
+}
+
+.wave-container {
+    display: flex;
+    width: 100%; /* O dobro da largura para cobrir o loop */
+
+}
+
+
+
+
+
+.MVV-section {
+    position: relative;
+    z-index: 1; /* Para garantir que a div esteja acima das ondas */
+    background-color: #eeeeee;
+    padding-right: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: space-between;
+    padding: 0px 5vw;
+    height: 300px;
+    text-align: center;   
+
+}
+
+.MVV-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.MVV-section p {
+    text-align: left;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.textos {
+    width: 25vw;
+}
+
+
+
+
+/* Portifólio */
+.container-portifolio{
+    width: 980px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    height: 560px;
+}
+
+.container-portifolios{
+    width: 720px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.first-line, .second-line
+{
+    display: flex;
+}
+
+.second-line{
+    margin-top: 28px;
+}
+
+.portifolio{
+    width: 290px;
+    height: 232px;
+    transition: 1s;
+}
+
+.portifolio:hover img{
+    width: 250px;
+    height: 180px;
+}
+
+.portifolio:hover .textos-portifolio{
+    position: relative;
+    text-align: center;
+    background-color:#ffb30e;
+    color: white;
+    width: 232px;
+    height: 164px;
+    margin-top: -50px;
+    margin-left: 10px;
+}
+
+
+.portifolio img{
+    width: 232px;
+    height: 164px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s;
+}
+
+.portifolio h2{
+    margin: 0px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.portifolio p{
+    margin: 0px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.desativo{
+    display: none;
+}
+
+.textos-portifolio{
+    position: relative;
+    text-align: center;
+    background-color: #0061c2;
+    color: white;
+    width: 232px;
+    height: 164px;
+    margin-top: -100px;
+    margin-left: 30px;
+    transition: 0.5s;
+}
+
+
+.container-texto{
+    display: flex;
+    flex-direction: column; /* Organiza os filhos em coluna */
+    width: 650px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.container-texto h1{
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.container-texto p{
+    font-size: 18px;
+}
+
+.contato-portifolio{
+    margin-left: auto;
+    color: #0055aa;
+    background-color: #9ccdff;
+    border: none;
+    padding: 14px 26px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor:pointer;
+    border-radius: 10px;
+    width: 15vw;
+}
+
+
+.slide-control
+{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.ponto{
+    width: 14px;
+    height: 14px;
+    border-radius: 14px;
+    background-color: #0061c2;
+    margin-top: 12px;
+}
+
+.ponto-desativo{
+    background-color:#b6b6b6;
+    margin-top: 14px;
+    width: 10px;
+    height: 10px;
+}
+
+.botao-pontos{
+    color: white;
+    height: 38px;
+    width: 38px;
+    background-color: #0061c2;
+    border: none;
+    border-radius: 38px;
+    cursor: pointer;
+}
+
+
+.botao-pontos:hover{
+    background-color: #00458a;
+}
+
+.ponto, .botao-pontos{
+    margin-right: 0.5vw;
+}
+
+
+
+
+
+/* Sustentabilidade */
+
+.sustentabilidade-container {
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../imagens/imagem-publica-sustentabilidade.png");
+    width: 100%; /* Definir a largura */
+    height: auto; /* Definir uma altura */
+    text-align: center;
+    padding:60px 0px;
+    margin-top: 100px;
+}
+
+.sustentabilidade-container h1{
+    font-size: 32px;
+}
+    
+.sustentabilidade-container p{
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20vw;
+    max-width: 60vw;
+    text-align: justify;
+}
+

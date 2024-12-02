@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ATUAL SOLUÇÕES EM ENGENHARIA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles/home-style.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/scrollButton-navBar-Footer-style.css"/>
+    <link rel="icon" href="imagens/logo.jpg" type="image/png">
+
+    <script type="text/javascript" src="scripts/navbar.js" defer></script>
+    <script type="text/javascript" src="scripts/scroll-button.js" defer></script>
+    <script type="text/javascript" src="scripts/menu.js" defer></script>
+    <script type="text/javascript" src="scripts/servicos-home.js" defer></script>
+    <script type="text/javascript" src="scripts/portifolio-slide.js" defer></script>
+
+        
+</head>
+<body>
+    <div id="navbar" class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Ícone do menu -->
+        <ul class="navbar-links">
+            <li><a href="https://www.atualsolucoes.com.br/site/"><button><h3>Home</h3></button></a></li>
+            <li><a href="https://www.atualsolucoes.com.br/site/sobre.html"><button><h3>Sobre</h3></button></a></li>
+            <li><a href="https://www.atualsolucoes.com.br/site/servicos.html"><button><h3>Serviços</h3></button></a></li>
+            <li><a href="https://www.atualsolucoes.com.br/site/obras.html"><button><h3>Obras</h3></button></a></li>
+            <li><a href="https://www.atualsolucoes.com.br/site/contato.html"><button><h3>Contato</h3></button></a></li>
+        </ul>
+    </div>
+    
+    <button id="topButton" onclick="scrollToTop()">&#8679; </button> <!-- botao de subida -->
+
+    <div id="home" class="banner">
+        <div class="banner-content">
+            <div class="barra-banner">
+
+            </div>
+            <div>
+                <div class="banner-text">
+                    <h1>Atual Soluções há mais de 40 anos atuando nas estradas e rodovias mais importântes do estado de São Paulo</h1>
+                    <p></p>
+                </div>
+                <div class="banner-buttons">
+                    <a href="https://www.atualsolucoes.com.br/site/sobre.html"><button class="botao-saber-mais" >Saber Mais</button></a>
+                    <a href="https://www.atualsolucoes.com.br/site/contato.html"><button class="botao-entrar-em-contato">Entrar em Contato</button></a>
+                </div>
+            </div>
+        </div>
+        <img src="imagens/logo.png" class="logo-banner">
+    </div>
+    
+    <svg class="divisor-onda" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#418ad3" d="M0,128L30,138.7C60,149,120,171,180,170.7C240,171,300,149,360,144C420,139,480,149,540,144C600,139,660,117,720,112C780,107,840,117,900,144C960,171,1020,213,1080,218.7C1140,224,1200,192,1260,186.7C1320,181,1380,203,1410,214.7L1440,224L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+    </svg>
+
+    
+
+    <div class="servicos-container">
+        <div class="conjunto-servicos servicos-ativos">
+            <div class="servico amarelo">
+                <i class="fas fa-expand-arrows-alt"></i>
+                <h3>RECOMPOSIÇÃO DE JUNTAS DE DILATAÇÃO E RETRAÇÃO</h3>
+            </div>
+            <div class="servico azul">
+                <i class="fas fa-water"></i>
+                <h3>DRENAGEM EM PAVIMENTOS RÍGIDOS E FLEXÍVEIS</h3>
+            </div>
+            <div class="servico amarelo">
+                <i class="fas fa-road"></i>
+                <h3>RECOMPOSIÇÃO DE PAVIMENTOS EM GERAL</h3>
+            </div>
+            <div class="servico azul">
+                <i class="fas fa-archway"></i>
+                <h3>RECUPERAÇÃO ESTRUTURAL DE OBRAS DE ARTE ESPECIAIS</h3>
+            </div>
+        </div>
+        
+        <div class="conjunto-servicos">
+            <div class="servico amarelo">
+                <i class="fas fa-shield-alt"></i>
+                <h3>EXECUÇÃO DE BARREIRAS DE CONCRETO E FLEXÍVEIS</h3>
+            </div>
+            <div class="servico azul">
+                <i class="fas fa-money-bill-wave"></i>
+                <h3>READEQUAÇÃO DE PRAÇA DE PEDÁGIOS</h3>
+            </div>
+            <div class="servico amarelo">
+                <i class="fas fa-biking"></i>
+                <h3>EXECUÇÃO DE CICLOVIAS, CAIXA DE CONTENÇÃO, ETC</h3>
+            </div>
+            <div class="servico azul">
+                <i class="fas fa-link"></i>
+                <h3>INSTALAÇÃO E MANUTENÇÃO DE TELAS EXPANDIDAS, ETC</h3>
+            </div>
+        </div>
+        
+        <div class="conjunto-servicos">
+            <div class="servico amarelo">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>INSTALAÇÃO DE DISPOSITIVOS DE SEGURANÇA</h3>
+            </div>
+            <div class="servico azul">
+                <i class="fas fa-building"></i>
+                <h3>CONSTRUÇÃO E AMPLIAÇÃO DE EDIFICAÇÕES</h3>
+            </div>
+            <div class="servico amarelo">
+                <i class="fas fa-hammer"></i>
+                <h3>EXECUÇÃO DE PÓRTICOS DE SACRIFÍCIO E TRAVA MOTOS</h3>
+            </div>
+            <div class="servico azul">
+                <i class="fas fa-fire-extinguisher"></i>
+                <h3>EXECUÇÃO DE CAIXAS DE CONTENÇÃO DE PRODUTOS PERIGOSOS</h3>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="pontos-container">
+        <div class="pontos-comprometimento">
+            <h1>Engenharia Civil com Comprometimento, Credibilidade e Parcerias de Valor</h1>
+            <p>Somos uma empresa de engenharia civil que se destaca pelo comprometimento, seriedade e honestidade em cada projeto. Trabalhamos em parceria com diversos players do mercado, sempre prezando pela credibilidade em nossas relações.</p>
+            <p>Além disso, buscamos constantemente melhorar nossas soluções, entregando obras com precisão, eficiência e qualidade.</p>
+        </div>
+        <div class="pontos-tecnologia-equipamentos">
+            <div class="pontos-tecnologia">
+                <img src="imagens/imagem-28.jpg" alt="">
+                <h2>Nos nossos projetos, buscamos obter a procura incessante por tecnologia, conquistando sempre a excelência.</h2>
+            </div>
+            <div class="pontos-equipamentos">
+                <h2>Nossos equipamentos são de ponta, o que nos permite trabalharmos com maior segurança.</h2>
+                <img src="imagens/imagem-10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="onda-top">
+        <div class="wave-container">
+            <svg id="visual" viewBox="0 0 1920" width="1920" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 107L16.8 109.7C33.7 112.3 67.3 117.7 101 116.5C134.7 115.3 168.3 107.7 202 100.5C235.7 93.3 269.3 86.7 303 85.3C336.7 84 370.3 88 404 91.5C437.7 95 471.3 98 505 103C538.7 108 572.3 115 606 119C639.7 123 673.3 124 707 118C740.7 112 774.3 99 808 91C841.7 83 875.3 80 909.2 85.3C943 90.7 977 104.3 1010.8 111.3C1044.7 118.3 1078.3 118.7 1112 114.8C1145.7 111 1179.3 103 1213 102.7C1246.7 102.3 1280.3 109.7 1314 107.7C1347.7 105.7 1381.3 94.3 1415 93.8C1448.7 93.3 1482.3 103.7 1516 104.7C1549.7 105.7 1583.3 97.3 1617 95.3C1650.7 93.3 1684.3 97.7 1718 96.3C1751.7 95 1785.3 88 1819 86.7C1852.7 85.3 1886.3 89.7 1903.2 91.8L1920 94L1920 0L1903.2 0C1886.3 0 1852.7 0 1819 0C1785.3 0 1751.7 0 1718 0C1684.3 0 1650.7 0 1617 0C1583.3 0 1549.7 0 1516 0C1482.3 0 1448.7 0 1415 0C1381.3 0 1347.7 0 1314 0C1280.3 0 1246.7 0 1213 0C1179.3 0 1145.7 0 1112 0C1078.3 0 1044.7 0 1010.8 0C977 0 943 0 909.2 0C875.3 0 841.7 0 808 0C774.3 0 740.7 0 707 0C673.3 0 639.7 0 606 0C572.3 0 538.7 0 505 0C471.3 0 437.7 0 404 0C370.3 0 336.7 0 303 0C269.3 0 235.7 0 202 0C168.3 0 134.7 0 101 0C67.3 0 33.7 0 16.8 0L0 0Z" fill="#0061c2"></path><path d="M0 87L16.8 87.3C33.7 87.7 67.3 88.3 101 86.2C134.7 84 168.3 79 202 74.7C235.7 70.3 269.3 66.7 303 69.7C336.7 72.7 370.3 82.3 404 86.2C437.7 90 471.3 88 505 82C538.7 76 572.3 66 606 64.8C639.7 63.7 673.3 71.3 707 71.5C740.7 71.7 774.3 64.3 808 62.5C841.7 60.7 875.3 64.3 909.2 68C943 71.7 977 75.3 1010.8 77C1044.7 78.7 1078.3 78.3 1112 77.5C1145.7 76.7 1179.3 75.3 1213 74.5C1246.7 73.7 1280.3 73.3 1314 74C1347.7 74.7 1381.3 76.3 1415 80.2C1448.7 84 1482.3 90 1516 92.3C1549.7 94.7 1583.3 93.3 1617 90.5C1650.7 87.7 1684.3 83.3 1718 84C1751.7 84.7 1785.3 90.3 1819 86.8C1852.7 83.3 1886.3 70.7 1903.2 64.3L1920 58L1920 0L1903.2 0C1886.3 0 1852.7 0 1819 0C1785.3 0 1751.7 0 1718 0C1684.3 0 1650.7 0 1617 0C1583.3 0 1549.7 0 1516 0C1482.3 0 1448.7 0 1415 0C1381.3 0 1347.7 0 1314 0C1280.3 0 1246.7 0 1213 0C1179.3 0 1145.7 0 1112 0C1078.3 0 1044.7 0 1010.8 0C977 0 943 0 909.2 0C875.3 0 841.7 0 808 0C774.3 0 740.7 0 707 0C673.3 0 639.7 0 606 0C572.3 0 538.7 0 505 0C471.3 0 437.7 0 404 0C370.3 0 336.7 0 303 0C269.3 0 235.7 0 202 0C168.3 0 134.7 0 101 0C67.3 0 33.7 0 16.8 0L0 0Z" fill="#004e9c"></path><path d="M0 52L16.8 54.7C33.7 57.3 67.3 62.7 101 60.2C134.7 57.7 168.3 47.3 202 45.3C235.7 43.3 269.3 49.7 303 50.7C336.7 51.7 370.3 47.3 404 47.7C437.7 48 471.3 53 505 56.5C538.7 60 572.3 62 606 61.5C639.7 61 673.3 58 707 56.7C740.7 55.3 774.3 55.7 808 54.2C841.7 52.7 875.3 49.3 909.2 49C943 48.7 977 51.3 1010.8 54.7C1044.7 58 1078.3 62 1112 59.3C1145.7 56.7 1179.3 47.3 1213 43.8C1246.7 40.3 1280.3 42.7 1314 43.7C1347.7 44.7 1381.3 44.3 1415 46.7C1448.7 49 1482.3 54 1516 55C1549.7 56 1583.3 53 1617 54.7C1650.7 56.3 1684.3 62.7 1718 61C1751.7 59.3 1785.3 49.7 1819 47.2C1852.7 44.7 1886.3 49.3 1903.2 51.7L1920 54L1920 0L1903.2 0C1886.3 0 1852.7 0 1819 0C1785.3 0 1751.7 0 1718 0C1684.3 0 1650.7 0 1617 0C1583.3 0 1549.7 0 1516 0C1482.3 0 1448.7 0 1415 0C1381.3 0 1347.7 0 1314 0C1280.3 0 1246.7 0 1213 0C1179.3 0 1145.7 0 1112 0C1078.3 0 1044.7 0 1010.8 0C977 0 943 0 909.2 0C875.3 0 841.7 0 808 0C774.3 0 740.7 0 707 0C673.3 0 639.7 0 606 0C572.3 0 538.7 0 505 0C471.3 0 437.7 0 404 0C370.3 0 336.7 0 303 0C269.3 0 235.7 0 202 0C168.3 0 134.7 0 101 0C67.3 0 33.7 0 16.8 0L0 0Z" fill="#003c77"></path><path d="M0 40L16.8 38.8C33.7 37.7 67.3 35.3 101 35.7C134.7 36 168.3 39 202 40.7C235.7 42.3 269.3 42.7 303 42.2C336.7 41.7 370.3 40.3 404 37.8C437.7 35.3 471.3 31.7 505 27.5C538.7 23.3 572.3 18.7 606 20.7C639.7 22.7 673.3 31.3 707 35.5C740.7 39.7 774.3 39.3 808 36.8C841.7 34.3 875.3 29.7 909.2 27.8C943 26 977 27 1010.8 26.5C1044.7 26 1078.3 24 1112 24.8C1145.7 25.7 1179.3 29.3 1213 30.3C1246.7 31.3 1280.3 29.7 1314 31.5C1347.7 33.3 1381.3 38.7 1415 36.3C1448.7 34 1482.3 24 1516 19.8C1549.7 15.7 1583.3 17.3 1617 20.3C1650.7 23.3 1684.3 27.7 1718 27.7C1751.7 27.7 1785.3 23.3 1819 24.7C1852.7 26 1886.3 33 1903.2 36.5L1920 40L1920 0L1903.2 0C1886.3 0 1852.7 0 1819 0C1785.3 0 1751.7 0 1718 0C1684.3 0 1650.7 0 1617 0C1583.3 0 1549.7 0 1516 0C1482.3 0 1448.7 0 1415 0C1381.3 0 1347.7 0 1314 0C1280.3 0 1246.7 0 1213 0C1179.3 0 1145.7 0 1112 0C1078.3 0 1044.7 0 1010.8 0C977 0 943 0 909.2 0C875.3 0 841.7 0 808 0C774.3 0 740.7 0 707 0C673.3 0 639.7 0 606 0C572.3 0 538.7 0 505 0C471.3 0 437.7 0 404 0C370.3 0 336.7 0 303 0C269.3 0 235.7 0 202 0C168.3 0 134.7 0 101 0C67.3 0 33.7 0 16.8 0L0 0Z" fill="#002a53"></path></svg>
+        </div>
+    </div>
+    
+    <div class="MVV-section">
+        <div class="textos">
+            <h2>Missão</h2>
+            <p>Nossa missão é atuar na construção civil com compromisso e dedicação, utilizando uma equipe de profissionais qualificados para atender às diversas demandas do mercado. Unimos conhecimento técnico e experiência prática para entregar obras de qualidade, sempre buscando superar as expectativas dos nossos clientes.</p>
+        </div>
+        <div class="textos">
+            <h2>Visão</h2>
+            <p> Nossa visão é continuar a trajetória de sucesso, consolidando nossa posição como referência no setor da construção civil. Almejamos nos destacar pela inovação, acompanhando as tendências e tecnologias que garantam excelência em cada projeto.</p>
+        </div>
+        <div class="textos">
+            <h2>Valores</h2>
+            <p>Pautamos nossas ações pelos valores de respeito, transparência, ética e credibilidade. Comprometemo-nos com a qualidade técnica, agilidade na execução e justiça nos preços, assegurando a satisfação dos nossos clientes em cada projeto.</p>            
+        </div>
+    </div>
+
+    <div class="onda-bottom">
+        <div class="wave-container">
+            <svg id="visual" viewBox="0 0 1920 " width="1920" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 107L16.8 109.7C33.7 112.3 67.3 117.7 101 116.5C134.7 115.3 168.3 107.7 202 100.5C235.7 93.3 269.3 86.7 303 85.3C336.7 84 370.3 88 404 91.5C437.7 95 471.3 98 505 103C538.7 108 572.3 115 606 119C639.7 123 673.3 124 707 118C740.7 112 774.3 99 808 91C841.7 83 875.3 80 909.2 85.3C943 90.7 977 104.3 1010.8 111.3C1044.7 118.3 1078.3 118.7 1112 114.8C1145.7 111 1179.3 103 1213 102.7C1246.7 102.3 1280.3 109.7 1314 107.7C1347.7 105.7 1381.3 94.3 1415 93.8C1448.7 93.3 1482.3 103.7 1516 104.7C1549.7 105.7 1583.3 97.3 1617 95.3C1650.7 93.3 1684.3 97.7 1718 96.3C1751.7 95 1785.3 88 1819 86.7C1852.7 85.3 1886.3 89.7 1903.2 91.8L1920 94L1920 0L1903.2 0C1886.3 0 1852.7 0 1819 0C1785.3 0 1751.7 0 1718 0C1684.3 0 1650.7 0 1617 0C1583.3 0 1549.7 0 1516 0C1482.3 0 1448.7 0 1415 0C1381.3 0 1347.7 0 1314 0C1280.3 0 1246.7 0 1213 0C1179.3 0 1145.7 0 1112 0C1078.3 0 1044.7 0 1010.8 0C977 0 943 0 909.2 0C875.3 0 841.7 0 808 0C774.3 0 740.7 0 707 0C673.3 0 639.7 0 606 0C572.3 0 538.7 0 505 0C471.3 0 437.7 0 404 0C370.3 0 336.7 0 303 0C269.3 0 235.7 0 202 0C168.3 0 134.7 0 101 0C67.3 0 33.7 0 16.8 0L0 0Z" fill="#0061c2"></path><path d="M0 87L16.8 87.3C33.7 87.7 67.3 88.3 101 86.2C134.7 84 168.3 79 202 74.7C235.7 70.3 269.3 66.7 303 69.7C336.7 72.7 370.3 82.3 404 86.2C437.7 90 471.3 88 505 82C538.7 76 572.3 66 606 64.8C639.7 63.7 673.3 71.3 707 71.5C740.7 71.7 774.3 64.3 808 62.5C841.7 60.7 875.3 64.3 909.2 68C943 71.7 977 75.3 1010.8 77C1044.7 78.7 1078.3 78.3 1112 77.5C1145.7 76.7 1179.3 75.3 1213 74.5C1246.7 73.7 1280.3 73.3 1314 74C1347.7 74.7 1381.3 76.3 1415 80.2C1448.7 84 1482.3 90 1516 92.3C1549.7 94.7 1583.3 93.3 1617 90.5C1650.7 87.7 1684.3 83.3 1718 84C1751.7 84.7 1785.3 90.3 1819 86.8C1852.7 83.3 1886.3 70.7 1903.2 64.3L1920 58L1920 0L1903.2 0C1886.3 0 1852.7 0 1819 0C1785.3 0 1751.7 0 1718 0C1684.3 0 1650.7 0 1617 0C1583.3 0 1549.7 0 1516 0C1482.3 0 1448.7 0 1415 0C1381.3 0 1347.7 0 1314 0C1280.3 0 1246.7 0 1213 0C1179.3 0 1145.7 0 1112 0C1078.3 0 1044.7 0 1010.8 0C977 0 943 0 909.2 0C875.3 0 841.7 0 808 0C774.3 0 740.7 0 707 0C673.3 0 639.7 0 606 0C572.3 0 538.7 0 505 0C471.3 0 437.7 0 404 0C370.3 0 336.7 0 303 0C269.3 0 235.7 0 202 0C168.3 0 134.7 0 101 0C67.3 0 33.7 0 16.8 0L0 0Z" fill="#004e9c"></path><path d="M0 52L16.8 54.7C33.7 57.3 67.3 62.7 101 60.2C134.7 57.7 168.3 47.3 202 45.3C235.7 43.3 269.3 49.7 303 50.7C336.7 51.7 370.3 47.3 404 47.7C437.7 48 471.3 53 505 56.5C538.7 60 572.3 62 606 61.5C639.7 61 673.3 58 707 56.7C740.7 55.3 774.3 55.7 808 54.2C841.7 52.7 875.3 49.3 909.2 49C943 48.7 977 51.3 1010.8 54.7C1044.7 58 1078.3 62 1112 59.3C1145.7 56.7 1179.3 47.3 1213 43.8C1246.7 40.3 1280.3 42.7 1314 43.7C1347.7 44.7 1381.3 44.3 1415 46.7C1448.7 49 1482.3 54 1516 55C1549.7 56 1583.3 53 1617 54.7C1650.7 56.3 1684.3 62.7 1718 61C1751.7 59.3 1785.3 49.7 1819 47.2C1852.7 44.7 1886.3 49.3 1903.2 51.7L1920 54L1920 0L1903.2 0C1886.3 0 1852.7 0 1819 0C1785.3 0 1751.7 0 1718 0C1684.3 0 1650.7 0 1617 0C1583.3 0 1549.7 0 1516 0C1482.3 0 1448.7 0 1415 0C1381.3 0 1347.7 0 1314 0C1280.3 0 1246.7 0 1213 0C1179.3 0 1145.7 0 1112 0C1078.3 0 1044.7 0 1010.8 0C977 0 943 0 909.2 0C875.3 0 841.7 0 808 0C774.3 0 740.7 0 707 0C673.3 0 639.7 0 606 0C572.3 0 538.7 0 505 0C471.3 0 437.7 0 404 0C370.3 0 336.7 0 303 0C269.3 0 235.7 0 202 0C168.3 0 134.7 0 101 0C67.3 0 33.7 0 16.8 0L0 0Z" fill="#003c77"></path><path d="M0 40L16.8 38.8C33.7 37.7 67.3 35.3 101 35.7C134.7 36 168.3 39 202 40.7C235.7 42.3 269.3 42.7 303 42.2C336.7 41.7 370.3 40.3 404 37.8C437.7 35.3 471.3 31.7 505 27.5C538.7 23.3 572.3 18.7 606 20.7C639.7 22.7 673.3 31.3 707 35.5C740.7 39.7 774.3 39.3 808 36.8C841.7 34.3 875.3 29.7 909.2 27.8C943 26 977 27 1010.8 26.5C1044.7 26 1078.3 24 1112 24.8C1145.7 25.7 1179.3 29.3 1213 30.3C1246.7 31.3 1280.3 29.7 1314 31.5C1347.7 33.3 1381.3 38.7 1415 36.3C1448.7 34 1482.3 24 1516 19.8C1549.7 15.7 1583.3 17.3 1617 20.3C1650.7 23.3 1684.3 27.7 1718 27.7C1751.7 27.7 1785.3 23.3 1819 24.7C1852.7 26 1886.3 33 1903.2 36.5L1920 40L1920 0L1903.2 0C1886.3 0 1852.7 0 1819 0C1785.3 0 1751.7 0 1718 0C1684.3 0 1650.7 0 1617 0C1583.3 0 1549.7 0 1516 0C1482.3 0 1448.7 0 1415 0C1381.3 0 1347.7 0 1314 0C1280.3 0 1246.7 0 1213 0C1179.3 0 1145.7 0 1112 0C1078.3 0 1044.7 0 1010.8 0C977 0 943 0 909.2 0C875.3 0 841.7 0 808 0C774.3 0 740.7 0 707 0C673.3 0 639.7 0 606 0C572.3 0 538.7 0 505 0C471.3 0 437.7 0 404 0C370.3 0 336.7 0 303 0C269.3 0 235.7 0 202 0C168.3 0 134.7 0 101 0C67.3 0 33.7 0 16.8 0L0 0Z" fill="#002a53"></path></svg>
+        </div>
+    </div>
+
+
+    <div class="container-portifolio">
+        <div class="container-portifolios">
+            <div class="first-line">
+                <div class="portifolio">
+                    <img src="imagens/obras/Portico de sacrificio.png">
+                    <div class="textos-portifolio">
+                        <h2>Pórtico de Sacrifício</h2>
+                        <p>Rod. Anchieta/SP. ECOVIAS</p>
+                    </div>
+                </div>
+                <div class="portifolio">
+                    <img src="imagens/obras/recuperação de talude.png">
+                    <div class="textos-portifolio">
+                        <h2>Recuperação de Talude</h2>
+                        <p>Rod. Ayrton Senna/SP. ECOPISTAS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="second-line">
+                <div class="portifolio">
+                    <img src="imagens/obras/Recuperação e Ampliação de OAE's.png">
+                    <div class="textos-portifolio">
+                        <h2>Recuperação e Ampliação de OAE's</h2>
+                        <p>Rodoanel Oeste. VIAOESTE</p>
+                    </div>
+                </div>
+                <div class="portifolio">
+                    <img src="imagens/obras/Execução de caixas de contenção de produtos perigosos.png">
+                    <div class="textos-portifolio">
+                        <h2>Execução de Caixas de Contenção</h2>
+                        <p>Rod. Carvalho Pinto/SP. ECOPISTAS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-portifolios desativo">
+            <div class="first-line">
+                <div class="portifolio">
+                    <img src="imagens/obras/Construção de Edificação.png">
+                    <div class="textos-portifolio">
+                        <h2>Construção de Edificação</h2>
+                        <p>Sede Ecopistas</p>
+                    </div>
+                </div>
+                <div class="portifolio">
+                    <img src="imagens/obras/Reconstrução de Junta de Dilatação.png">
+                    <div class="textos-portifolio">
+                        <h2>Reconstrução de Junta de Dilatação</h2>
+                        <p>Rod. dos Imigrantes/SP. ECOVIAS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="second-line">
+                <div class="portifolio">
+                    <img src="imagens/obras/Dreno de Pavimento.png">
+                    <div class="textos-portifolio">
+                        <h2>Dreno de Pavimento</h2>
+                        <p>equipamentos próprios. Produção de mais de 100m/dia</p>
+                    </div>
+                </div>
+                <div class="portifolio">
+                    <img src="imagens/obras/Barreiras de Concreto.png">
+                    <div class="textos-portifolio">
+                        <h2>Barreiras de Concreto</h2>
+                        <p>Formas Próprias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-texto">
+            <h1>Veja alguns dos nossos projetos executados sempre com excelência</h1>
+            <p>Separamos um portifólio de obras para deixá-las em destaque. Nós sempre executamos as nossas obras com excelência, buscando prazos realistas, preços justos e a melhor experiencia do cliente.</p>
+            
+            <div class="slide-control">
+                <button class="botao-pontos esquerda">←</button>
+                <div class="ponto"></div>
+                <div class="ponto ponto-desativo"></div>
+                <button class="botao-pontos direita">→</button>
+                <a href="https://www.atualsolucoes.com.br/site/contato.html"><button class="contato-portifolio">Entre em contato</button></a>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="sustentabilidade-container">
+        <h1>Compromisso de Sustentabilidade</h1>
+        <p>Nós, da ATUAL SOLUÇÕES, comprometidos com questões de
+            sustentabilidade, focamos nossa estratégia na integração entre
+            QUALIDADE, MEIO AMBIENTE, SAÚDE E SEGURANÇA DOTRABALHO.
+            Entendendo a responsabilidade de todos e cada um no respeito ao
+            Meio Ambiente, buscamos superar o máximo possível a legislação
+            vigente, incentivando e orientando colaboradores a, muito mais que
+            obedecerem, entenderem a importância de sua conservação, para
+            garantirmos um planeta com qualidade para o desenvolvimento e
+            manutenção das diversas formas de vida, preservando os recursos
+            naturais necessários às próximas gerações.</p>
+    </div>
+    
+    
+    <div class="footer">
+        <div class="top-footer">
+            <ul>
+                <li class="redes">
+                    <h2>ATUAL SOLUÇÕES<p></p> EM ENGENHARIA</h2>
+                    <h5>Aqui seus projetos acontecem!</h5>
+                </li>
+                <li class="menu-footer">
+                    <a href="https://www.atualsolucoes.com.br/site/">Home</a>
+                    <a href="https://www.atualsolucoes.com.br/site/sobre.html">Sobre</a>
+                    <a href="https://www.atualsolucoes.com.br/site/servicos.html">Serviços</a>
+                    <a href="https://www.atualsolucoes.com.br/site/obras.html">Obras</a>
+                    <a href="https://www.atualsolucoes.com.br/site/contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-footer">
+            &copy; 2024 ATUAL SOLUÇÕES EM ENGENHARIA
+        </div>
+    </div>
+    
+</body>
+</html>

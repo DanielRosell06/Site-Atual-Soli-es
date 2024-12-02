@@ -1,0 +1,264 @@
+
+/* 970px */
+@media (max-width: 970px)
+{
+
+    /* SERVIÇOS */
+    .servicos-content
+    {
+        display: block;
+    }
+    .left
+    {
+        margin-bottom: 3vh;
+    }
+    .servicos-content li
+    {
+        height: 23vh;
+    }
+
+    .servicos-content li img
+    {
+        width: vw;
+    }
+    
+
+
+    /* HOME */
+    .content-sections .section
+    {
+        display: block;
+        text-align: center;
+        padding: 0px;
+    }
+        
+    .content-sections .section img
+    {
+        width: 100%;
+        height: 30vh;
+        border-radius: 25px 25px 0px 0px;
+    }
+
+    .content-sections .section div
+    {
+        padding: 20px;
+    }
+    
+
+
+
+    /* OBRAS */
+    .obras-content
+    {
+        display: block;
+    }
+    .carousel-container-2 
+    {
+        width: 100%;
+    }
+    .obras-right-content
+    {
+        margin-left: 0px;
+        width: 100%;
+        display:flex;
+        margin-top: 20px;
+    }
+    .titulo-box
+    {
+        max-width: 30vw;
+    }
+    .parceiros-content
+    {
+        width: 100vw;
+    }
+    .parceiros-content ul li img
+    {
+        width: 12vw;
+        height: auto;
+    }
+
+
+}
+
+
+/* 870px */
+@media (max-width: 870px)
+{
+    /* Sobre */
+    .sobre-content
+    {
+        display: block;
+        text-align: center;
+    }
+    .carousel-container
+    {
+        max-width: 90vw;
+    }
+    .sobre-right-content
+    {
+        display:none;
+    }
+
+    /* RODAPÉ */
+    .menu-footer
+    {
+        visibility:hidden;
+    }
+}
+
+
+
+/* 650px */
+@media (max-width: 650px)
+{
+    
+    /* SUBTITULOS */
+    .subtitle-box
+    {
+        display: block;
+        text-align: center;
+    }
+    .subtitle
+    {
+        width: auto;
+        justify-content: center;
+    }
+    .subtitle-content
+    {
+        max-width: 100%;
+        width: auto;
+        display: block;
+    }
+
+
+    /* HOME */
+    .commitment-section {
+        background-color: #eeeeee;
+        padding-right: 0px;
+        text-align: center;
+        display: block;
+        align-items: center;
+        width: auto;
+        margin: 4vh 5vw 2vh;
+    }
+
+    .commitment-section div
+    {
+        padding: 5px 10px;
+    }
+
+    .placeholder-image
+    {
+        margin: 0px;
+        width: 100%;
+    }
+
+    /* SOBRE */
+    .carousel-slide {
+        display: block;
+    }
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        border: 1px solid #ddd;
+    }
+    .carousel-slide img {
+        width: 100%; /* Definindo o tamanho da imagem para 40% da largura do slide */
+        height: 300px;
+    }
+
+    .carousel-text {
+        width: 90%; /* O texto ocupa o restante da largura (55%) */
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .carousel-text p
+    {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 550px) {
+    /* HOME */
+    .content-sections {
+        display: block;
+        margin: 0vw 5vw;
+        border-radius: 0px;
+    }
+    .content-sections .section{
+        background-color: #eeeeee;
+        border-radius: 0px;
+    }
+
+    .content-sections .section img {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+
+    .primeira-section
+    {
+        margin: 0px 0px 2vh;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    /* Esconde os links da navbar normal */
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 50px;
+        width: auto;
+        background-color: #004080;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin-right: 0;
+        text-align: right;
+    }
+
+    .navbar ul li button {
+        width: 100%; /* Os botões ocupam toda a largura do menu */
+        text-align: center; /* Alinha o texto dentro dos botões à direita */
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 50px; /* Move o ícone para a direita */
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .navbar-links.active {
+        display: block; /* Exibe os links quando o menu está ativo */
+    }
+}
+
+@media (max-width: 440px) {
+    h1
+    {
+        font-size: 28px;
+    }
+    h2
+    {
+        font-size: 20px;
+    }
+    p
+    {
+        font-size: 14px;
+    }
+}

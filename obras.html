@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ATUAL SOLUÇÕES EM ENGENHARIA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles/obras-style.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/scrollButton-navBar-Footer-style.css"/>
+    <link rel="icon" href="imagens/logo.jpg" type="image/png">
+
+    <script type="text/javascript" src="scripts/galeria-obras.js" defer></script>
+    <script type="text/javascript" src="scripts/navbar.js" defer></script>
+    <script type="text/javascript" src="scripts/scroll-button.js" defer></script>
+    <script type="text/javascript" src="scripts/menu.js" defer></script>
+
+</head>
+
+<body>
+    <div id="navbar" class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Ícone do menu -->
+        <ul class="navbar-links">
+            <li><a href="https://www.atualsolucoes.com.br/site/"><button><h3>Home</h3></button></a></li>
+            <li><a href="https://www.atualsolucoes.com.br/site/sobre.html"><button><h3>Sobre</h3></button></a></li>
+            <li><a href="https://www.atualsolucoes.com.br/site/servicos.html"><button><h3>Serviços</h3></button></a></li>
+            <li><a href="https://www.atualsolucoes.com.br/site/obras.html"><button><h3>Obras</h3></button></a></li>
+            <li><a href="https://www.atualsolucoes.com.br/site/contato.html"><button><h3>Contato</h3></button></a></li>
+        </ul>
+    </div>
+
+    <button id="topButton" onclick="scrollToTop()">&#8679; </button> <!-- botao de subida -->
+
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-texts">
+                <h1>Veja Nossas Obras</h1>
+                <p>Separamos imagens e detalhes de algumas de nossas obras para incentivá-lo a iniciar um projeto com a gente. Todas as obras a mostra foram concluidas com êxito, perfeitamente de acordo com o nosso manual de conduta e ética, e seguindo sempore com o que acreditamos.</p>
+                <a href="https://www.atualsolucoes.com.br/site/contato.html"><button>Entre em Contato</button></a>
+            </div>
+            <div class="hero-images">
+                <div class="imgagem-hero-1 hero-image">            
+                    <img src="imagens/imagem-03.jpg">
+                </div>
+                <div class="imgagem-hero-2 hero-image">
+                    <img src="imagens/imagem-04.jpg">
+                </div>
+                <div class="imgagem-hero-3 hero-image">
+                    <img src="imagens/imagem-05.jpg">
+                </div>
+                <div class="triangulo1 triangulo"></div>
+                <div class="triangulo2 triangulo"></div>
+                <div class="triangulo3 triangulo"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wave-container">
+        <svg id="visual" viewBox="0 0 1920" width="1920" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 191L32 192.2C64 193.3 128 195.7 192 200.3C256 205 320 212 384 208.8C448 205.7 512 192.3 576 191.8C640 191.3 704 203.7 768 207.8C832 212 896 208 960 205.7C1024 203.3 1088 202.7 1152 204.7C1216 206.7 1280 211.3 1344 206.7C1408 202 1472 188 1536 186.7C1600 185.3 1664 196.7 1728 198C1792 199.3 1856 190.7 1888 186.3L1920 182L1920 0L1888 0C1856 0 1792 0 1728 0C1664 0 1600 0 1536 0C1472 0 1408 0 1344 0C1280 0 1216 0 1152 0C1088 0 1024 0 960 0C896 0 832 0 768 0C704 0 640 0 576 0C512 0 448 0 384 0C320 0 256 0 192 0C128 0 64 0 32 0L0 0Z" fill="#d8ecff"></path><path d="M0 151L32 154.8C64 158.7 128 166.3 192 170C256 173.7 320 173.3 384 166.7C448 160 512 147 576 139.5C640 132 704 130 768 130.8C832 131.7 896 135.3 960 137.2C1024 139 1088 139 1152 143.2C1216 147.3 1280 155.7 1344 154.2C1408 152.7 1472 141.3 1536 140.2C1600 139 1664 148 1728 151.8C1792 155.7 1856 154.3 1888 153.7L1920 153L1920 0L1888 0C1856 0 1792 0 1728 0C1664 0 1600 0 1536 0C1472 0 1408 0 1344 0C1280 0 1216 0 1152 0C1088 0 1024 0 960 0C896 0 832 0 768 0C704 0 640 0 576 0C512 0 448 0 384 0C320 0 256 0 192 0C128 0 64 0 32 0L0 0Z" fill="#96beec"></path><path d="M0 96L32 97.5C64 99 128 102 192 105.3C256 108.7 320 112.3 384 115.2C448 118 512 120 576 114.7C640 109.3 704 96.7 768 92.3C832 88 896 92 960 97.3C1024 102.7 1088 109.3 1152 109C1216 108.7 1280 101.3 1344 103C1408 104.7 1472 115.3 1536 120.7C1600 126 1664 126 1728 123.2C1792 120.3 1856 114.7 1888 111.8L1920 109L1920 0L1888 0C1856 0 1792 0 1728 0C1664 0 1600 0 1536 0C1472 0 1408 0 1344 0C1280 0 1216 0 1152 0C1088 0 1024 0 960 0C896 0 832 0 768 0C704 0 640 0 576 0C512 0 448 0 384 0C320 0 256 0 192 0C128 0 64 0 32 0L0 0Z" fill="#5790d9"></path><path d="M0 69L32 68.3C64 67.7 128 66.3 192 65.3C256 64.3 320 63.7 384 61C448 58.3 512 53.7 576 52.2C640 50.7 704 52.3 768 55.8C832 59.3 896 64.7 960 66.2C1024 67.7 1088 65.3 1152 61.2C1216 57 1280 51 1344 49.2C1408 47.3 1472 49.7 1536 54.8C1600 60 1664 68 1728 72.2C1792 76.3 1856 76.7 1888 76.8L1920 77L1920 0L1888 0C1856 0 1792 0 1728 0C1664 0 1600 0 1536 0C1472 0 1408 0 1344 0C1280 0 1216 0 1152 0C1088 0 1024 0 960 0C896 0 832 0 768 0C704 0 640 0 576 0C512 0 448 0 384 0C320 0 256 0 192 0C128 0 64 0 32 0L0 0Z" fill="#0061c2"></path></svg>    
+    </div>
+
+    <div class="menu-selecao-container">
+        <div class="menu-selecao-content">
+            <button id="btn-juntas" class="active btn-selecao-obras">Juntas</button>
+            <button id="btn-drenagens" class="btn-selecao-obras">Drenagens</button>
+            <button id="btn-edificacoes" class="btn-selecao-obras">Edificações</button>
+            <button id="btn-recuperacoes" class="btn-selecao-obras">Recuperações</button>
+            <button id="btn-barreiras" class="btn-selecao-obras">Barreiras</button>
+            <button id="btn-outros" class="btn-selecao-obras">Outros</button>
+        </div>
+    </div>
+
+    <div id="section-juntas" class="secao-obras ativo">
+        <div class="obra">
+            <h2>Substituição de Junta tipo FIP por Junta Elastomérica Pré Formada</h2>
+            <h4>SPMAR</h4>
+            <div class="obras-imagens">
+                <img src="imagens/pagina-obras/Juntas1.jpg">
+                <img src="imagens/pagina-obras/Juntas2.jpg">
+            </div>
+        </div>
+        <div class="obra">
+            <h2>Reconstituição de Berço, Lábio e Junta Elastomérica Pré Formada</h2>
+            <h4>Rod. dos Imigrantes/SP ECOVIAS</h4>
+            <div class="obras-imagens">
+                <img src="imagens/pagina-obras/Juntas3.jpg">
+                <img src="imagens/pagina-obras/Juntas4.jpg">
+            </div>
+        </div>
+        <div class="obra">
+            <h2>Reconstituição de Berço, Lábio e Junta Elastomérica Pré Formada</h2>
+            <h4>Rod. Castelo Branco/SP ViaOeste</h4>
+            <div class="obras-imagens">
+                <img src="imagens/pagina-obras/Juntas5.jpg">
+                <img src="imagens/pagina-obras/Juntas6.jpg">
+                <img src="imagens/pagina-obras/Juntas7.jpg">
+                <img src="imagens/pagina-obras/Juntas8.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section-drenagens" class="secao-obras">
+        <div class="obra">
+            <h2>DRENO DE PAVIMENTO, equipamentos próprios</h2>
+            <h4>Produção de mais de 100m/dia</h4>
+            <div class="obras-imagens">
+                <img src="imagens/pagina-obras/Drenagem1.jpg">
+                <img src="imagens/pagina-obras/Drenagem2.jpg">
+                <img src="imagens/pagina-obras/Drenagem3.jpg">
+                <img src="imagens/pagina-obras/Drenagem4.jpg">
+            </div>
+        </div>
+        <div class="obra">
+            <h2>SISTEMAS DE DRENAGEM</h2>
+            <h4>Rod. Cônego Domenico Rangoni/SP, Rod. Ayrton Senna/SP, BR-101/ES</h4>
+            <div class="obras-imagens">
+                <img src="imagens/pagina-obras/Drenagem5.jpg">
+                <img src="imagens/pagina-obras/Drenagem6.jpg">
+                <img src="imagens/pagina-obras/Drenagem7.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section-edificacoes" class="secao-obras">
+        <div class="obra">
+            <h2>CONSTRUÇÃO DE EDIFICAÇÃO</h2>
+            <h4>Sede ECOPISTAS</h4>
+            <div class="obras-imagens">
+                <img src="imagens/pagina-obras/Edificacao1.jpg">
+            </div>
+        </div>
+        <div class="obra">
+            <h2>CONSTRUÇÃO DE EDIFICAÇÃO</h2>
+            <h4>Lavador no CACUB</h4>
+            <div class="obras-imagens">
+                <img src="imagens/pagina-obras/Edificacao2.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section-recuperacoes" class="secao-obras">
+        <div class="obra">
+            <h2>RECUPERAÇÃODE TALUDE</h2>
+            <h4>Rod. Ayrton Senna/SP, ECOPISTAS</h4>
+            <div class="obras-imagens">
+                <img src="imagens/pagina-obras/Recuperacao1.jpg">
+                <img src="imagens/pagina-obras/Recuperacao2.jpg">
+            </div>
+        </div>
+        <div class="obra">
+            <h2>RECUPERAÇÃO E AMPLIAÇÃODE OAE’S</h2>
+            <h4>VIAOESTE, Rodoanel Oeste</h4>
+            <div class="obras-imagens">
+                <img src="imagens/pagina-obras/Recuperacao3.jpg">
+                <img src="imagens/pagina-obras/Recuperacao4.jpg">
+            </div>
+        </div>
+        <div class="obra">
+            <h2>RECUPERAÇÃO DE PAVIMENTO RÍGIDO</h2>
+            <h4></h4>
+            <div class="obras-imagens">
+                <img src="imagens/pagina-obras/Recuperacao5.jpg">
+                <img src="imagens/pagina-obras/Recuperacao6.jpg">
+                <img src="imagens/pagina-obras/Recuperacao7.jpg">
+                <img src="imagens/pagina-obras/Recuperacao8.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section-barreiras" class="secao-obras">
+        <div class="obra">
+            <h2>BARREIRAS DE CONCRETO, formas próprias</h2>
+            <h4></h4>
+            <div class="obras-imagens">
+                <img src="imagens/pagina-obras/Barreiras1.jpg">
+                <img src="imagens/pagina-obras/Barreiras2.jpg">
+            </div>
+        </div>
+        <div class="obra">
+            <h2>ALAMBRADOS, TELAS EXPANDIDAS, CERCAS E CONCERTINAS</h2>
+            <h4></h4>
+            <div class="obras-imagens">
+                <img src="imagens/pagina-obras/Barreiras3.jpg">
+                <img src="imagens/pagina-obras/Barreiras4.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section-outros" class="secao-obras">
+        <div class="obra">
+            <h2>EXECUÇÃO DE CAIXAS DE CONTENÇÃO PRODUTOS PERIGOSOS</h2>
+            <h4>Rod. Carvalho Pinto/SP, ECOPISTAS</h4>
+            <div class="obras-imagens">
+                <img src="imagens/pagina-obras/Outro1.jpg">
+                <img src="imagens/pagina-obras/Outro2.jpg">
+            </div>
+        </div>
+        <div class="obra">
+            <h2>PÓRTICO DE SACRIFÍCIO</h2>
+            <h4>Rod. Anchieta/SP, ECOVIAS</h4>
+            <div class="obras-imagens">
+                <img src="imagens/pagina-obras/Outro3.jpg">
+                <img src="imagens/pagina-obras/Outro4.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="top-footer">
+            <ul>
+                <li class="redes">
+                    <h2>ATUAL SOLUÇÕES<p></p> EM ENGENHARIA</h2>
+                    <h5>Aqui seus projetos acontecem!</h5>
+                    <ul class="icones">
+                        <li><i class="fab fa-facebook-f"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-pinterest"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                    </ul>
+                </li>
+                <li class="menu-footer">
+                    <a href="https://www.atualsolucoes.com.br/site/">Home</a>
+                    <a href="https://www.atualsolucoes.com.br/site/sobre.html">Sobre</a>
+                    <a href="https://www.atualsolucoes.com.br/site/servicos.html">Serviços</a>
+                    <a href="https://www.atualsolucoes.com.br/site/obras.html">Obras</a>
+                    <a href="https://www.atualsolucoes.com.br/site/contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-footer">
+            &copy; 2024 ATUAL SOLUÇÕES EM ENGENHARIA
+        </div>
+    </div>
+
+
+</body>

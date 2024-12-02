@@ -1,0 +1,251 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    text-align: justify;
+}
+
+
+
+
+
+
+/* HERO */
+
+.hero-container{
+    height: 500px;
+    width: 100%;
+    background-color: #0061c2;
+}
+
+.hero-content{
+    height: 500px;
+    width: 970px;
+    padding-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    display: flex;
+}
+
+#hero-svg{
+    position: absolute;
+    right: 0;
+}
+
+.hero-texts{
+    margin-top: 40px;
+    width:500px;
+}
+
+.hero-content h1{
+    font-size: 44px;
+    width:500px;
+}
+
+.hero-content p{
+    font-size: 18px;
+    width: 460px;
+}
+
+.hero-content img{
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.hero-images{
+    width: 470px;
+}
+
+.hero-image{
+    width: 1px;
+    height: 1px;
+}
+
+.hero-image img{
+    border-radius: 100%;
+    position: absolute;
+}
+
+.imgagem-hero-1 img{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 220px;
+    height: 220px;
+    box-shadow: 30px 30px 0px  #ffb30e;
+}
+
+.imgagem-hero-2 img{
+    margin-top: 120px;
+    margin-left: 240px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 30px 30px 0px  #ffb30e;
+}
+
+.imgagem-hero-3 img{
+    margin-top: 250px;
+    margin-left: 70px;
+    width: 180px;
+    height: 180px;
+    box-shadow: 30px 30px 0px  #ffb30e;
+}
+
+
+.hero-texts button{
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    padding:13px 30px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease; /* Suaviza a transição quando clicado */
+    background-color: #ffb30e;
+    box-shadow: 0px 5px 0px #c98b06, 0px 10px 15px rgba(0, 0, 0, 0.2); /* Sombra para o efeito de 3D */
+    color: white;
+}
+
+.hero-texts button:active {
+    transform: translateY(5px); /* Faz o botão "afundar" ao ser clicado */
+    background-color:#c98b06; /* Cor do botão */
+    box-shadow: 0px 3px 0px #a16f03, 0px 7px 10px rgba(0, 0, 0, 0.2); /* Sombra menor durante o clique */
+}
+
+
+
+
+
+
+/* Divisor de ondinha */
+
+.wave-container{
+    margin-bottom: 280px;
+}
+
+#visual{
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+
+
+/* Historia */
+
+
+.historia-content{
+    display: flex;
+    width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.historia-texts{
+    width: 520px;
+}
+
+.historia-image{
+    width: 450px;
+}
+
+.historia-image img{
+    padding-left: 25px;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+}
+
+.historia-texts button
+{
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    padding:13px 30px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease; /* Suaviza a transição quando clicado */
+    background-color: #ffb30e;
+    box-shadow: 0px 5px 0px #c98b06, 0px 10px 15px rgba(0, 0, 0, 0.2); /* Sombra para o efeito de 3D */
+}
+
+.historia-texts button:active {
+    transform: translateY(5px); /* Faz o botão "afundar" ao ser clicado */
+    background-color:#c98b06; /* Cor do botão */
+    box-shadow: 0px 3px 0px #a16f03, 0px 7px 10px rgba(0, 0, 0, 0.2); /* Sombra menor durante o clique */
+}
+
+
+
+
+
+
+/* Por que nos escolher */
+
+.porque-container{
+    background-color: rgb(233, 233, 233);
+    margin-top: 70px;
+}
+
+.porque-content{
+    width: 970px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    display: flex;
+}
+
+.porque-left{
+    width: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.subtitle{
+    margin-top: 60px;
+}
+
+.porque-left a{
+    padding: 0;
+}
+
+.porque-right{
+    width: 600px;
+    padding-left: 50px;
+}
+
+.filosofia{
+    display: flex;
+}
+
+.filosofia-icones{
+    width: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.filosofia-icones i{
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color:#0061c2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.filosofia-texts{
+    width: 450px
+}

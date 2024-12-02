@@ -1,0 +1,102 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    text-align: justify;
+}
+
+.bloco{
+    height: 300px;
+    width: 100%;
+    background-color: #0061c2;
+    position: absolute;
+    z-index: -1;
+}
+
+.wave-container{
+    position: absolute;
+    margin-top: 300px;
+    z-index: -1;
+}
+
+#visual{
+    margin: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.contato-container{
+    height: 708px;
+    width:  100%;
+}
+
+.contato-content{
+    width: 800px;
+    height: 708px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.left-content{
+    position: absolute;
+    background-color: rgb(226, 226, 226);
+    height: 460px;
+    margin-top: 95px;
+    width: 380px;
+    padding: 30px;
+    margin-left: 80px;
+    border-radius: 20px;
+}
+
+.left-content-container{
+    width: 300px;
+}
+
+.right-content{
+    position: absolute;
+    background-color: white;
+    height: 440px;
+    width: 440px;
+    margin-top: 137px;
+    margin-left: 430px;
+    box-shadow: -10px 10px 15px rgb(190, 190, 190);
+    border-radius: 20px;
+}
+
+.right-content iframe{
+    border-radius: 20px;
+}
+
+.wats{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.wats button
+{
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    padding:13px 30px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease; /* Suaviza a transição quando clicado */
+    background-color: #ffb30e;
+    box-shadow: 0px 5px 0px #c98b06, 0px 10px 15px rgba(0, 0, 0, 0.2); /* Sombra para o efeito de 3D */
+}
+
+.wats button:active {
+    transform: translateY(5px); /* Faz o botão "afundar" ao ser clicado */
+    background-color:#c98b06; /* Cor do botão */
+    box-shadow: 0px 3px 0px #a16f03, 0px 7px 10px rgba(0, 0, 0, 0.2); /* Sombra menor durante o clique */
+}
+
