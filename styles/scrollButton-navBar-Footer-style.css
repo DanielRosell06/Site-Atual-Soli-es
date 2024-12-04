@@ -103,7 +103,7 @@
 .redes
 {
     margin-right: 50px;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .top-footer ul li{
@@ -120,17 +120,6 @@
     margin-bottom: 10px;
     font-weight: bold;
     line-height: 6px;
-}
-
-.icones
-{
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.icones li i
-{
-    margin-right: 10px;
 }
 
 .icones li i:hover

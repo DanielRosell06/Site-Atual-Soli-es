@@ -7,7 +7,8 @@
     display: none;
 }
 
-/* 970px */
+
+
 @media (max-width: 580px)
 {
 
@@ -42,6 +43,10 @@
     .navbar {
         justify-content: left;
         display: block;
+    }
+
+    .menu-footer a{
+        display: none;
     }
 
 }

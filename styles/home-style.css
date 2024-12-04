@@ -10,6 +10,16 @@ p{
 }
 
 
+.retira-margem-top{
+    margin-top: 0;
+    padding-top:10px;
+}
+
+.retira-margem-bot{
+    margin-bottom: 0;
+    padding-bottom:10px;
+}
+
 
 /* Banner */
 
@@ -41,11 +51,12 @@ p{
 }
 
 .banner-text {
-    width: 60vw;
+    width: 65vw;
     color: white;
     text-align: left;
     margin-top: 31vh;
 }
+
 .banner-text h1{
     font-size: 6vh;
     font-weight: bold;
@@ -100,7 +111,7 @@ p{
 .logo-banner
 {
     position: absolute;
-    width: 20vw;
+    width: 250px;
     right: 3vw;
     filter: brightness(100%);
     bottom: 40px;
@@ -114,17 +125,48 @@ p{
 }
 
 
+/* Responsividade Banner */
 
-/* Conteúdo primário */
+.h1-banner-curto{
+    display: none;
+}
+
+@media (max-width: 1000px){
+    .h1-banner-longo{
+        display: none;
+    }
+    .h1-banner-curto{
+        display: block;
+    }
+
+    .logo-banner{
+        width: 200px;
+    }
+}
+
+@media (max-width: 456px){
+    .banner-buttons{
+        display: none;
+    }
+
+    .logo-banner{
+        width: 180px;
+    }
+}
 
 
 
 
 
+
+
+
+
+/* Servicos */
 .servicos-container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espaçamento entre cada conjunto de serviços */
+    gap: 20px;
     width: 100%;
     height: 300px;
 }
@@ -170,8 +212,51 @@ p{
     margin-bottom: auto;
 }
 
+/* Responsividade servicos */
+
+.botao-ver-servicos-container{
+    display: none;
+}
+
+@media (max-width: 770px){
+    .servicos-ativos{
+        display: none;
+    }
+
+    .botao-ver-servicos-container{
+        display: block;
+        width: 80%;
+        height: auto;
+        margin-top: 30px;
+        background-color:#e6e6e6;
+        border-radius: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .botao-ver-servicos-container button{
+        border: none;
+        background-color: #ffb30e;
+        padding: 15px;
+        border-radius: 30px;
+        color: white;
+        box-shadow: 0px 8px #d19209;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .servicos-container {
+        height: auto;
+    }
+}
 
 
+
+
+
+
+/* Pontos */
 
 .pontos-container{
     width: 1000px;
@@ -239,6 +324,7 @@ p{
     height: 50%;
     display: flex;
     margin-top:10px;
+    margin-left: 30px;
 }
 
 .pontos-equipamentos img{
@@ -255,11 +341,115 @@ p{
     background-color: #ffb30e;
     color: white;
     margin: 0px;
-    margin-left: 30px;
+}
+
+/* Responsividade */
+
+
+
+@media (max-width: 1000px){
+    .pontos-container{
+        width: 90vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .pontos-comprometimento{
+        width: 100%;
+    }
+
+    
+    .pontos-tecnologia-equipamentos{
+        margin-left: auto;
+        margin-right: auto;
+        width: 550px;
+    }
+
+    .pontos-tecnologia, .pontos-equipamentos{
+        width: 500px;
+    }
+
+    .pontos-equipamentos img, .pontos-tecnologia img{
+        width: 200px;
+    }
+
+    .pontos-tecnologia h2, .pontos-equipamentos h2{
+        width: 300px;
+    }
 }
 
 
-/* Missao visão valor*/
+
+@media (max-width: 650px){
+    .pontos-tecnologia-equipamentos{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pontos-tecnologia, .pontos-equipamentos{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pontos-equipamentos img, .pontos-tecnologia img{
+        width: 135px;
+    }
+
+    .pontos-tecnologia h2, .pontos-equipamentos h2{
+        width: 145px;
+        font-size: 16px;
+        padding: 10px 10px;
+        height: auto;
+    }
+
+    .pontos-equipamentos img{
+        margin-right: 30px;
+    }
+
+    
+}
+
+
+
+
+/* Botao Contato Responsivo */
+.botao-contato-responsivo{
+    display: none;
+}
+
+
+@media(max-width:600px){
+    .botao-contato-responsivo{
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #eeeeee;
+        border-radius: 20px;
+        text-align: center;
+        padding: 20px 5%;
+        padding-top: 10px;
+        margin-top: 30px;
+    }
+    .botao-contato-responsivo button{
+        border: none;
+        background-color: #0061c2;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 50px;
+        box-shadow: 0px 7px #004a94;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+
+
+
+/* Ondas */
 
 .onda-top, .onda-bottom {
     position: relative;
@@ -289,9 +479,7 @@ p{
 
 }
 
-
-
-
+/* Missao visão valor*/
 
 .MVV-section {
     position: relative;
@@ -324,6 +512,30 @@ p{
 .textos {
     width: 25vw;
 }
+
+/* Responsividade */
+
+@media(max-width:1000px){
+    .MVV-section{
+        display: block;
+        height: auto;
+    }
+
+    .textos{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}
+
+@media(max-width:500px){
+    .textos{
+        width: 90%;
+    }
+}
+
+
+
 
 
 
@@ -432,16 +644,16 @@ p{
 }
 
 .contato-portifolio{
-    margin-left: auto;
+    margin-left: 20px;
     color: #0055aa;
     background-color: #9ccdff;
     border: none;
-    padding: 14px 26px;
+    padding: 14px 16px;
     font-size: 20px;
     font-weight: 700;
     cursor:pointer;
     border-radius: 10px;
-    width: 15vw;
+    width: 250px;
 }
 
 
@@ -486,6 +698,92 @@ p{
     margin-right: 0.5vw;
 }
 
+/* Responsividade */
+
+.portifolio-top{
+    display: none;
+}
+
+@media (max-width:1000px){
+    .first-line{
+        width: 580px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .second-line{
+        width: 580px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+    .container-portifolios{
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+
+    .portifolio-top{
+        display: block;
+    }
+
+    .portifolio-top h1{
+        margin-bottom: 30px;
+        width: 90vw;
+    }
+
+    .container-texto{
+        width: 90vw;
+    }
+
+    .portifolio-bottom h1{
+        display: none;
+    }
+    
+    .container-texto p{
+        width: 90vw;
+    }
+
+    .container-portifolio{
+        display:block;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+}
+
+@media (max-width:610px){
+
+    .portifolio-top h1{
+        margin-bottom: 30px;
+        width: 90vw;
+        font-size: 32px;
+    }
+
+    .first-line{
+        display: block;
+        width: 90vw;
+    }
+    .second-line{
+        display: block;
+        width: 90vw;
+    }
+
+    .portifolio{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contato-portifolio{
+        margin-left: 20px;
+        width: 50vw;
+    }
+}
+
+
 
 
 
@@ -515,15 +813,13 @@ p{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* Responsividade */
-
+@media (max-width: 800px){
+    .sustentabilidade-container h1{
+        font-size: 24px;
+    }
+    .sustentabilidade-container p{
+        max-width: 86vw;
+        margin-left: 7vw;
+    }
+}
