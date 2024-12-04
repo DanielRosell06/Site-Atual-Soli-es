@@ -1,27 +1,24 @@
-// Fecha o menu ao clicar em um botão do menu
-function toggleMenu() {
-    const navbarLinks = document.querySelector('.navbar-links');
-    navbarLinks.classList.toggle('active');
-}
+const botao = document.getElementById('menu-botao');
 
-// Fecha o menu ao clicar em qualquer botão
-document.querySelectorAll('.navbar-links button').forEach(button => {
-    button.addEventListener('click', () => {
-        document.querySelector('.navbar-links').classList.remove('active');
-    });
-});
+function toggleMenu() {
+    const MenuNavbarLinks = document.querySelector('.menu-navbar-links');
+    MenuNavbarLinks.classList.toggle('menu-ativo'); 
+}
 
 // Fecha o menu ao clicar fora dele
 window.addEventListener('click', function(event) {
-    const navbarLinks = document.querySelector('.navbar-links');
-    const menuIcon = document.querySelector('.menu-icon');
-    if (!navbarLinks.contains(event.target) && !menuIcon.contains(event.target)) {
-        navbarLinks.classList.remove('active');
+    const MenuNavbarLinks = document.querySelector('.menu-navbar-links');
+    const menuIcon = document.querySelector('.menu-navbar');
+    if (!MenuNavbarLinks.contains(event.target) && !menuIcon.contains(event.target)) {
+        MenuNavbarLinks.classList.remove('menu-ativo');
     }
 });
+    
 
 // Fecha o menu ao rolar a tela
 window.addEventListener('scroll', function() {
-    const navbarLinks = document.querySelector('.navbar-links');
-    navbarLinks.classList.remove('active');
+    const MenuNavbarLinks = document.querySelector('.menu-navbar-links');
+    MenuNavbarLinks.classList.remove('menu-ativo'); 
 });
+
+botao.addEventListener("click", toggleMenu);

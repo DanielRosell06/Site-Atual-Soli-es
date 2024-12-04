@@ -3,9 +3,6 @@
 .navbar {
     position: fixed;
     width: 100%;
-    background-image: url(../imagens/logo-barra-navegação.jpg);
-    background-position-y: center;
-    background-position-x: 10px;
     background-repeat: no-repeat;
     background-color: #004080;
     padding: 0px;

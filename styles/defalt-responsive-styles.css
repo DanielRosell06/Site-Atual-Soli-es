@@ -1,0 +1,47 @@
+
+.menu-navbar{
+    display: none;
+}
+
+.menu-navbar-links{
+    display: none;
+}
+
+/* 970px */
+@media (max-width: 580px)
+{
+
+    /* NavBar */
+
+    .navbar-links{
+        display: none;
+    }
+
+    .menu-navbar{
+        display: block;
+        margin-top: 18px;
+        margin-left: 15px;
+    }
+
+    .menu-navbar button{
+        border: none;
+        background-color: #004080;
+        color: white;
+        font-size: 30px;
+    }
+
+    .menu-navbar-links{
+        width: 100px;
+        height: 350px;
+    }
+
+    .menu-ativo{
+        display: block;
+    }
+
+    .navbar {
+        justify-content: left;
+        display: block;
+    }
+
+}
