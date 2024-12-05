@@ -10,7 +10,7 @@
     justify-content: center;
     height: 70px;
     z-index: 1100; /* Para garantir que a navbar fique na frente */
-    background-image: url("/imagens/logo.png");
+    background-image: url("/site/imagens/logo.png");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 120px;

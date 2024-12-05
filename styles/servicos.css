@@ -283,9 +283,13 @@ p{
     .servico{
         margin-bottom: 15px;
         height: 160px;
-        width: 82%;
+        width: 86%;
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .servicos-section-right .servico{
+        margin-left:auto;
     }
 }
 
