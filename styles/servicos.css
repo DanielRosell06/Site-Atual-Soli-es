@@ -125,13 +125,47 @@ p{
     box-shadow: 0px 3px 0px #a16f03, 0px 7px 10px rgba(0, 0, 0, 0.2); /* Sombra menor durante o clique */
 }
 
+/* Responsividade */
+
+@media(max-width: 1000px){
+    .hero-images{
+        display: none;
+    }
+
+    .hero-texts{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-container{
+        width: 100%;
+    }
+
+    .hero-content{
+        width: 100%;
+    }
+    
+}
+
+
+@media(max-width: 570px){
+    .hero-texts{
+        width: 90%;
+    }
+
+    .hero-texts h1, .hero-texts p{
+        width: auto;
+    }
+}
+
+
 
 
 
 /* Servicos */
 
+
 .servicos-container{
-    height: 500px;
     width: 100%;
     margin-top: 100px;
     color: white;
@@ -183,21 +217,83 @@ p{
     font-weight: bold;
     border-radius: 16px;
     cursor: pointer;
-    transition: all 0.2s ease; /* Suaviza a transição quando clicado */
+    transition: all 0.2s ease; 
     background-color: #ffb30e;
-    box-shadow: 0px 5px 0px #c98b06, 0px 10px 15px rgba(0, 0, 0, 0.2); /* Sombra para o efeito de 3D */
+    box-shadow: 0px 5px 0px #c98b06, 0px 10px 15px rgba(0, 0, 0, 0.2);
     color: white;
 }
 
 .servicos-container-adc button:active {
-    transform: translateY(5px); /* Faz o botão "afundar" ao ser clicado */
-    background-color:#c98b06; /* Cor do botão */
-    box-shadow: 0px 3px 0px #a16f03, 0px 7px 10px rgba(0, 0, 0, 0.2); /* Sombra menor durante o clique */
+    transform: translateY(5px); 
+    background-color:#c98b06; 
+    box-shadow: 0px 3px 0px #a16f03, 0px 7px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Responsividade */
+@media (max-width:1000px){
+    .servicos-content{
+        display: block;
+        height: auto;
+        width: auto;
+    }
+
+    .servicos-containter{
+        height: auto;
+    }
+
+    .servicos-containter-servicos{
+        height: auto;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .servicos-section{
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+    }
+
+    .servicos-container-adc{
+        height: auto;
+        width: 80%;
+        padding-left: 5%;
+        padding-left: 5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width:740px){
+    .servicos-containter-servicos{
+        display: flex;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .servicos-section{
+        display: block;
+        height: auto;
+        width: 50%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .servico{
+        margin-bottom: 15px;
+        height: 160px;
+        width: 82%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 
 
+
 /* Contato */
+
 
 .contato-container{
     height: 100px;
@@ -232,17 +328,28 @@ p{
     font-weight: bold;
     border-radius: 16px;
     cursor: pointer;
-    transition: all 0.2s ease; /* Suaviza a transição quando clicado */
+    transition: all 0.2s ease;
     background-color:#0061c2;
-    box-shadow: 0px 5px 0px #004e9c, 0px 10px 15px rgba(0, 0, 0, 0.2); /* Sombra para o efeito de 3D */
+    box-shadow: 0px 5px 0px #004e9c, 0px 10px 15px rgba(0, 0, 0, 0.2); 
     color: white;
 }
 
 .contato-content button:active {
-    transform: translateY(5px); /* Faz o botão "afundar" ao ser clicado */
-    background-color:#004e9c; /* Cor do botão */
-    box-shadow: 0px 3px 0px #003c79, 0px 7px 10px rgba(0, 0, 0, 0.2); /* Sombra menor durante o clique */
+    transform: translateY(5px);
+    background-color:#004e9c;
+    box-shadow: 0px 3px 0px #003c79, 0px 7px 10px rgba(0, 0, 0, 0.2); 
 }
+
+/* Responsividade */
+
+@media(max-width:1000px){
+    .contato-content{
+        width: 90%;
+        height: auto;
+        padding-bottom: 20px;
+    }   
+}
+
 
 
 
@@ -252,8 +359,8 @@ p{
 .sustentabilidade-container {
     color: white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../imagens/imagem-publica-sustentabilidade.png");
-    width: 100%; /* Definir a largura */
-    height: 400px; /* Definir uma altura */
+    width: 100%;
+    height: 400px;
     text-align: center;
     padding:60px 0px;
 }
@@ -273,4 +380,14 @@ p{
     margin-right: auto;
     max-width: 970px;
     text-align: justify;
+}
+
+@media (max-width:1000px){
+    .sustentabilidade-container p{
+        width: 90%;
+    }
+
+    .sustentabilidade-container {
+        height: auto;
+    }
 }
