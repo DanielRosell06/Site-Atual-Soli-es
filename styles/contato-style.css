@@ -9,6 +9,8 @@ p{
     text-align: justify;
 }
 
+
+/* Ondas de fundo */
 .bloco{
     height: 300px;
     width: 100%;
@@ -29,6 +31,9 @@ p{
     z-index: -1;
 }
 
+
+
+/* Contato */
 
 .contato-container{
     height: 708px;
@@ -51,7 +56,6 @@ p{
     margin-top: 95px;
     width: 380px;
     padding: 30px;
-    margin-left: 80px;
     border-radius: 20px;
 }
 
@@ -65,7 +69,7 @@ p{
     height: 440px;
     width: 440px;
     margin-top: 137px;
-    margin-left: 430px;
+    margin-left: 360px;
     box-shadow: -10px 10px 15px rgb(190, 190, 190);
     border-radius: 20px;
 }
@@ -100,3 +104,57 @@ p{
     box-shadow: 0px 3px 0px #a16f03, 0px 7px 10px rgba(0, 0, 0, 0.2); /* Sombra menor durante o clique */
 }
 
+/* Responsividade */
+.menor{
+    display: none;   
+}
+@media(max-width:840px){
+
+    .contato-container{
+        height: auto;
+    }
+
+    .contato-content{
+        width: 100%;
+        display: block;
+        height: 560px;
+    }
+
+    .left-content-container{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-content{
+        display: none;
+    }
+
+    .left-content{
+        width: 80%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: auto;
+    }
+
+    .menor{
+        display: block;
+        width: 310px;
+        height: 310px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+@media(max-width:465px){
+    .contato-content{
+        width: 100%;
+        display: block;
+        height: 630px;
+    }
+}
