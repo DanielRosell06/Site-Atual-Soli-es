@@ -43,6 +43,7 @@
     .navbar {
         justify-content: left;
         display: block;
+        background-position: center;
     }
 
     .menu-footer a{
