@@ -770,11 +770,13 @@ p{
     .second-line{
         display: block;
         width: 90vw;
+        margin-top: 0;
     }
 
     .portifolio{
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 30px;
     }
 
     .contato-portifolio{
