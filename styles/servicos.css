@@ -382,6 +382,7 @@ p{
     text-align: justify;
 }
 
+/* Responsividade */
 @media (max-width:1000px){
     .sustentabilidade-container p{
         width: 90%;
