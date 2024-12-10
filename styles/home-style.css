@@ -21,8 +21,8 @@ p{
 }
 
 
-/* Banner */
 
+/* Banner */
 .banner {
     position: relative;
     background-color: #d7ebff;
@@ -124,9 +124,7 @@ p{
     z-index: -1; /* Coloca o SVG atrás do conteúdo */
 }
 
-
 /* Responsividade Banner */
-
 .h1-banner-curto{
     display: none;
 }
